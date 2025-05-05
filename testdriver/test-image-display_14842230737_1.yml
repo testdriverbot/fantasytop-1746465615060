@@ -1,0 +1,29 @@
+version: 4.2.29
+session: 6818f7f290973e9f5811600f
+steps:
+  - prompt: Check that all images on the homepage are loaded and displayed correctly.
+    commands:
+      - command: focus-application
+        name: Google Chrome
+      - command: hover-image
+        description: anime-style character cards with colorful backgrounds
+        action: hover
+      - command: hover-image
+        description: influencer cards with a person's face and colorful borders
+        action: hover
+      - command: hover-image
+        description: trophy icon with the text "TOURNAMENT"
+        action: hover
+  - prompt: Assert that no broken images are present.
+    commands:
+      - command: hover-image
+        description: anime-style character cards with colorful backgrounds
+        action: hover
+      - command: hover-image
+        description: influencer cards with a person's face and colorful borders
+        action: hover
+      - command: hover-image
+        description: trophy icon with the text "TOURNAMENT"
+        action: hover
+      - command: assert
+        expect: all images are displayed correctly without any broken links
