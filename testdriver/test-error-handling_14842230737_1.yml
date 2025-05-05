@@ -1,0 +1,11 @@
+version: 4.2.29
+session: 6818f7f2290e27180791a280
+steps:
+  - prompt: Trigger a known error scenario
+    commands:
+      - command: focus-application
+        name: Google Chrome
+      - command: hover-text
+        text: Start Playing
+        description: bright green button at the bottom of the page
+        action: click
