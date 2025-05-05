@@ -1,0 +1,7 @@
+version: 4.2.29
+session: 6818f7f290973e9f5811600d
+steps:
+  - prompt: Navigate to the login page using the URL or link.
+    commands:
+      - command: focus-application
+        name: Google Chrome
