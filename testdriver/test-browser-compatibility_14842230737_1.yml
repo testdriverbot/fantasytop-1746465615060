@@ -1,0 +1,16 @@
+version: 4.2.29
+session: 6818f7f2290e27180791a282
+steps:
+  - prompt: Open the website in a different browser
+    commands:
+      - command: focus-application
+        name: Microsoft Edge
+      - command: hover-text
+        text: Type here to search
+        description: search bar in the taskbar
+        action: click
+      - command: type
+        text: fantasy.top/login
+      - command: press-keys
+        keys:
+          - enter
