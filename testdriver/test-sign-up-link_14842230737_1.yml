@@ -1,0 +1,11 @@
+version: 4.2.29
+session: 6818f7f290973e9f5811600b
+steps:
+  - prompt: Click on the "Start Now" link at the top right.
+    commands:
+      - command: focus-application
+        name: Google Chrome
+      - command: hover-text
+        text: Start Now
+        description: link at the top right of the browser window
+        action: click
