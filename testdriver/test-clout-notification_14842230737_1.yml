@@ -1,0 +1,17 @@
+version: 4.2.29
+session: 6818f7f390973e9f58116011
+steps:
+  - prompt: Look for the "Clout is Live!" notification at the top.
+    commands:
+      - command: focus-application
+        name: Google Chrome
+      - command: hover-text
+        text: Clout is Live! Claim your points and become a hero.
+        description: notification banner at the top of the browser
+        action: hover
+  - prompt: Assert that the notification content is as expected.
+    commands:
+      - command: assert
+        expect: >-
+          the notification content is "Clout is Live! Claim your points and
+          become a hero."
