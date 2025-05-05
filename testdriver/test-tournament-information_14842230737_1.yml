@@ -1,0 +1,17 @@
+version: 4.2.29
+session: 6818f7f2290e27180791a284
+steps:
+  - prompt: Look for the "Tournament" section.
+    commands:
+      - command: focus-application
+        name: Google Chrome
+      - command: hover-text
+        text: TOURNAMENT
+        description: tournament section with a trophy icon and "2d left" text
+        action: hover
+  - prompt: Assert that the tournament details
+    commands:
+      - command: focus-application
+        name: Google Chrome
+      - command: assert
+        expect: the tournament section with "2d left" and description is visible
