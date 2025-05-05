@@ -1,0 +1,1 @@
+1. Open the website in a different browser
