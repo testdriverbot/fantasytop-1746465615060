@@ -1,0 +1,27 @@
+version: 4.2.29
+session: 6818f7f290973e9f58116009
+steps:
+  - prompt: Open the website in the browser.
+    commands:
+      - command: focus-application
+        name: Google Chrome
+  - prompt: Assert that the homepage loads successfully.
+    commands:
+      - command: focus-application
+        name: Google Chrome
+      - command: assert
+        expect: Bet on your Favourite Influencers
+  - prompt: Assert that all main elements are visible
+    commands:
+      - command: focus-application
+        name: Google Chrome
+      - command: assert
+        expect: Bet on your Favourite Influencers
+      - command: assert
+        expect: Start Now!
+      - command: assert
+        expect: 120K+ Players
+      - command: assert
+        expect: $6M+ Rewards
+      - command: assert
+        expect: Start Playing
